@@ -4,13 +4,128 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>The Café</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<title>The Café - Home</title>
+		<link href="https://fonts.googleapis.com/csss?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/index/styles.css">
 	</head>
 
 	<body>
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
+		<div class="container">
+			<div class="navWrapper">
+				<div class="leftSide">
+					<div class="navLinkWrapper activeNavLink">
+						<a href="index.html">Home</a>
+					</div>
+
+					<div class="navLinkWrapper">
+						<a href="about.html">About</a>
+					</div>
+				</div>
+
+				<div class="rightSide">
+					<div class="brand">
+						<div>beanbeanjuice</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contentWrapper">
+				<div class="portfolioItemsWrapper">
+					<div class="portfolioItemWrapper">
+						<div class="portfolioImageBackground" style="background-image:url(images/index/youtube.jpg)"></div>
+						<div class="imageTextWrapper">
+							<div class="logoWrapper">
+								<img src="images/logos/Channel%20Icon%20v1.png">
+							</div>
+
+							<div class="subtitle">
+								YouTube Channel since 2015 hell yeahhhhh
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolioItemWrapper">
+						<div class="portfolioImageBackground" style="background-image:url(images/index/twitch.jpg)"></div>
+						<div class="imageTextWrapper">
+							<div class="logoWrapper">
+								<img src="images/logos/Channel%20Icon%20v1.png">
+							</div>
+
+							<div class="subtitle">
+								Twitch channel hell yeahhhh
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolioItemWrapper">
+						<div class="portfolioImageBackground" style="background-image:url(images/index/discord.jpg)"></div>
+						<div class="imageTextWrapper">
+							<div class="logoWrapper">
+								<img src="images/logos/Channel%20Icon%20v1.png">
+							</div>
+
+							<div class="subtitle">
+								discord server hell yeahhhh
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolioItemWrapper">
+						<div class="portfolioImageBackground" style="background-image:url(images/index/instagram.jpg)"></div>
+						<div class="imageTextWrapper">
+							<div class="logoWrapper">
+								<img src="images/logos/Channel%20Icon%20v1.png">
+							</div>
+
+							<div class="subtitle">
+								instagram account hell yeahhhh
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolioItemWrapper">
+						<div class="portfolioImageBackground" style="background-image:url(images/index/coding.jpg)"></div>
+						<div class="imageTextWrapper">
+							<div class="logoWrapper">
+								<img src="images/logos/Channel%20Icon%20v1.png">
+							</div>
+
+							<div class="subtitle">
+								github page hell yeahhhh
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolioItemWrapper">
+						<div class="portfolioImageBackground" style="background-image:url(images/index/twitter.jpg)"></div>
+						<div class="imageTextWrapper">
+							<div class="logoWrapper">
+								<img src="images/logos/Channel%20Icon%20v1.png">
+							</div>
+
+							<div class="subtitle">
+								twitter hell yeahhhhhh
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</body>
+
+	<script>
+		const portfolioItems = document.querySelectorAll('.portfolioItemWrapper')
+
+		portfolioItems.forEach(portfolioItem => {
+			portfolioItem.addEventListener('mouseover', () => {
+				portfolioItem.childNodes[1].classList.add('imageDarken');
+			})
+
+			portfolioItem.addEventListener('mouseout', () => {
+				portfolioItem.childNodes[1].classList.remove('imageDarken');
+			})
+		})
+	</script>
 
 </html>
