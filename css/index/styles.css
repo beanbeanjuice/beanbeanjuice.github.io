@@ -93,13 +93,13 @@ body {
     margin-bottom: 20px;
 }
 
-.imageTextWrapper .subtitle {
+.imageTextWrapper .subtitle, .imageTextWrapper .subtitle a {
     transition: 1s;
     color: transparent;
     font-weight: 600;
 }
 
-.imageTextWrapper:hover .subtitle {
+.imageTextWrapper:hover .subtitle,.imageTextWrapper:hover .subtitle a {
     font-weight: 600;
     color: lightseagreen;
 }
